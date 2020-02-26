@@ -1,0 +1,110 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner STDIN = new Scanner(System.in);
+        ArrayList<Student> q = new ArrayList<Student>(5);
+        String name ="";
+        int age = 0;
+        int grade = 0;
+        boolean first = false;
+        String[] s = new String[3];
+        boolean empty = true;
+        while(STDIN.hasNext()){
+            name = STDIN.nextLine();
+            empty = false;
+            if(name.equals("end")){
+                //System.out.println("I found END!");
+                break;
+            }
+            if(!name.equals("next")){
+                
+                s = name.split(" ");
+                //System.out.println(s[0] + " " + s[1] + " " + s[2]);
+                Student student_t = new Student(s[0], Integer.parseInt(s[1]), Integer.parseInt(s[2]));
+                if(!first){
+                    q.add(student_t);
+                    first = true;
+                    continue;
+                }
+                
+                //print(q.get(q.size() -1).toString());
+                //print(student_t.toString());
+                //printArr(q);
+                
+                if(student_t.getGrade() < q.get(q.size() -1).getGrade()){
+                    int n = 0;
+                    if(q.size() == 0){
+                        n=0;
+                    }else if(q.size() == 1){
+                        n=0;
+                    }else if(q.size() == 2){
+                        n = 1;
+                    }else{
+                        n= q.size() -1;
+                    }
+                    q.add(n , student_t);
+                    //print("byGrade q.size() = " + q.size() + " n= " + n );
+                    continue;
+                }
+                if(student_t.getAge() < q.get(q.size()-1).getAge()){
+                    //q.add(q.size() -2 == -2 ? 0 : q.size() -2 == -1? 0 : q.size()-2 == 0? 1 : q.size() -1,student_t);
+                    int n = 0;
+                    if(q.size() == 0){
+                        n=0;
+                    }else if(q.size() == 1){
+                        n=0;
+                    }else if(q.size() == 2){
+                        n = 1;
+                    }else{
+                        n= q.size() -1;
+                    }
+                    q.add(n , student_t);
+                    //print("byAge q.size() = " + q.size() + " n= " + n );
+                    continue;
+                }
+                
+                q.add(student_t);
+                //print("Last");
+            }else{
+                //System.out.println("REmove0 " + q.get(0).toString());
+                q.remove(0);
+            }
+            
+            
+        }
+        if(!empty){
+            for( int i =0; i<q.size(); i++){
+                System.out.println(q.get(i).toString());
+            }    
+        }else{
+            System.out.println("empty");
+        }
+            
+        }        
+    }
+class Student{
+        private String name;
+        private int age;
+        private int grade;
+        public Student(String n, int a, int g){
+            name = n;
+            age = a;
+            grade = g;
+        }
+    public String getName(){
+        return name;
+    }
+    public int getAge(){
+        return age;
+    }
+    public int getGrade(){
+        return grade;
+    }
+    public String toString(){
+        return name + " " + age + " " + grade ;
+    }
+    }
