@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=KenRandom
+comment1.params=guesses
+comment1.target=java.lang.String\ makeGuess(char[][])
+numComments=2

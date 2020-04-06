@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Assignment9
+comment0.text=\r\nArtur\ Linnik\r\n300305901\r\nAssignment9\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=g
+comment2.target=java.lang.String\ makeGuess(char[][])
+comment3.params=s
+comment3.target=void\ print(java.lang.String)
+numComments=4

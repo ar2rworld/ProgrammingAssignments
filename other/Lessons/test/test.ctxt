@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=test
+comment0.text=import\ javax.swing.JFrame;\r\nimport\ javax.swing.ImageIcon;\r\nimport\ javax.swing.JLabel;
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+numComments=2

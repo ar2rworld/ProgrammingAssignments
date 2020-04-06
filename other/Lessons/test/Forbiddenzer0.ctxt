@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Forbiddenzer0
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=a
+comment2.target=int\ getNumber(int[])
+comment3.params=r
+comment3.target=int[]\ getR(int)
+numComments=4

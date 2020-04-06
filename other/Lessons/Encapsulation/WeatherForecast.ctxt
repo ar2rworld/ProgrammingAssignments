@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=WeatherForecast
+comment1.params=s
+comment1.target=void\ setSkies(java.lang.String)
+comment2.params=h
+comment2.target=void\ setHigh(int)
+comment3.params=l
+comment3.target=void\ setLow(int)
+numComments=4

@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Pikachu
+comment1.params=
+comment1.target=Pikachu()
+comment2.params=name
+comment2.target=Pikachu(java.lang.String)
+comment3.params=
+comment3.target=int\ getHitPoints()
+comment4.params=
+comment4.target=java.lang.String\ toString()
+numComments=5

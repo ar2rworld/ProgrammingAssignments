@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=RaggedArrays
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=a
+comment2.target=void\ check3(int[][][])
+comment3.params=a
+comment3.target=void\ out(int[][])
+comment4.params=a\ i
+comment4.target=void\ out3(int[][][],\ int)
+comment5.params=a
+comment5.target=void\ check(int[][])
+numComments=6

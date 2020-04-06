@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Point
+comment1.params=x\ y
+comment1.target=Point(double,\ double)
+comment2.params=
+comment2.target=double\ getX()
+comment3.params=
+comment3.target=double\ getY()
+comment4.params=
+comment4.target=java.lang.String\ toString()
+comment5.params=a
+comment5.target=double\ dotProduct(Point)
+comment6.params=a
+comment6.target=boolean\ equals(Point)
+comment7.params=a
+comment7.target=Point\ add(Point)
+numComments=8
